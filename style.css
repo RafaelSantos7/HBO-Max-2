@@ -1,5 +1,169 @@
+/* Import font google */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+}
+
+#geral {
+    background-image: url(/images/tlo2.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 850px;
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.header ul li {
+    list-style: none;
+}
+
+.navbar-corner-left {
+    display: flex;
+    gap: 50px;
+}
+
+.menu-hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.menor {
+    width: 30px;
+}
+
+.search {
+    cursor: pointer;
+}
+
+.logoHBO {
+    width: 169px;
+    height: 29px;
+    cursor: pointer;
+}
+
+.navbar-corner-right ul {
+    display: flex;
+    gap: 50px;
+}
+
+.navbar-corner-right ul li{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.navbar-corner-right ul li:hover {
+    color: #666262;
+    border-bottom: 2px solid #666262 ;
+}
+
+/* main section */
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 65px;
+}
+
+.title h1 {
+    width: 350px;
+    text-align: center;
+    padding-right: 55px;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.title h2 {
+    width: 573px;
+    height: 74px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    padding-right: 55px;
+    padding-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 566px;
+    margin-top: 5px;
+}
+
+label {
+    font-size: 23px;;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+input {
+    width: 500px;
+    height: 40px;
+    background: rgba(211, 211, 211, 0.75);
+    border-radius: 25px;
+    border: 0px;
+}
+
+input::placeholder {
+    color: #FFFFFF;
+    padding-left: 30px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.btn1 {
+    width: 150px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background: linear-gradient(90deg, #A18CD1 0%, #FBC2EB 100%);
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    font-size: 20px;
+    color: #121111;
+}
+
+.submit h2 {
+    width: 500px;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin: 27px 0px 30px 0px;
+}
+
+.btn2 {
+    width: 300px;
+    height: 35px;
+    margin-left: 100px;
+    background: linear-gradient(90deg, #A18CD1 0%, #FBC2EB 100%);
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    font-size: 20px;
+    color: #121111;
 }
